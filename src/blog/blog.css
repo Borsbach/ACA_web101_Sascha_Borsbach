@@ -1,0 +1,34 @@
+h1 {
+  text-align: center;
+  width: 60%;
+  margin: 6% auto;
+  color: teal
+}
+body{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNJ4L4XYeD6FXjZ3D2L-Y2bIK6I_oSjJCrTWjYxlFIuEF4SY-TXA)!important;
+  background-repeat: no-repeat;
+  background-size: 1600px 1000px;
+}
+main{
+  color: rgb(17, 38, 38);
+  background: lightskyblue;
+  width: 75%;
+  margin: 3% auto;
+}
+article{
+  margin: 4%;
+  border: 3px solid darkblue
+}
+article > h3 {
+  font-size: 5en;
+}
+article:hover{
+  color:white;
+  background: rgb(124, 116, 100)
+}
+article:hover > h3 {
+  color: darkslategray
+}
+footer{
+  text-align: center
+}
