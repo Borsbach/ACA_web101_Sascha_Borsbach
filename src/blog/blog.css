@@ -11,23 +11,25 @@ body{
 }
 main{
   color: rgb(17, 38, 38);
-  background: lightskyblue;
+ 
   width: 75%;
   margin: 3% auto;
 }
 article{
-  margin: 4%;
-  border: 3px solid darkblue
+  /* margin: 4%; */
+  margin-top: 2%;
+  border: 3px solid darkblue;
+  background: lightskyblue;
 }
 article > h3 {
   font-size: 5en;
 }
 article:hover{
-  color:white;
-  background: rgb(124, 116, 100)
+  color:yellow;
+  background: rgb(37, 16, 226)
 }
 article:hover > h3 {
-  color: darkslategray
+  color: white
 }
 footer{
   text-align: center
