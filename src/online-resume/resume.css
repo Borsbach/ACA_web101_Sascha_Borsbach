@@ -1,0 +1,55 @@
+body {
+    /* background-color:  */
+}
+h1 {
+    text-align: center;
+    color: red;
+    font-family: "Times New Roman";
+    font-size: 60px;
+}
+h2 {
+    text-align: left;
+    color:blue;
+    border: 2px solid gray;
+    width: 95%;
+    margin: 1% auto;
+    background-color: beige
+}p {
+    text-align: left;
+    color: green;
+    width: 95%;
+    margin: 1% auto;
+    font-style: italic;
+}
+.contact-info {
+    float: right;
+
+}
+.address {
+    width: 200px;
+    margin: none;
+    float: left;
+
+}
+.container1 {
+    margin: 3%;
+
+}
+.article1 {
+    float: left;
+    width: 30%;
+}
+.article2 {
+    float:;
+    width: 30%;
+    clear: 
+}
+.article3 {
+    float: right;
+    width: 30%;
+}
+.article {
+    float: left;
+    width: 27%;
+    margin: 2%;
+}
