@@ -1,9 +1,9 @@
 body {
-    /* background-color:  */
+    background-color: lightblue
 }
 h1 {
     text-align: center;
-    color: red;
+    color: black;
     font-family: "Times New Roman";
     font-size: 60px;
 }
@@ -12,44 +12,38 @@ h2 {
     color:blue;
     border: 2px solid gray;
     width: 95%;
-    margin: 1% auto;
+    margin: 2% auto;
     background-color: beige
-}p {
+}
+p {
     text-align: left;
-    color: green;
+    color: gray;
     width: 95%;
     margin: 1% auto;
     font-style: italic;
+    font-weight: bold;
+}
+.name {
+    font-weight: bold;
+    font-size: 170%;
+    float: left top;
 }
 .contact-info {
     float: right;
-
+    width: 13%;
 }
 .address {
-    width: 200px;
+    width: 180px;
     margin: none;
     float: left;
-
 }
-.container1 {
-    margin: 3%;
-
+.container-1 {
+    margin: 3% auto;
+    width: 95%;
 }
-.article1 {
-    float: left;
-    width: 30%;
+.education {
+    width: 60%;
 }
-.article2 {
-    float:;
-    width: 30%;
-    clear: 
-}
-.article3 {
-    float: right;
-    width: 30%;
-}
-.article {
-    float: left;
-    width: 27%;
-    margin: 2%;
+.skills {
+    width: 60%;
 }
