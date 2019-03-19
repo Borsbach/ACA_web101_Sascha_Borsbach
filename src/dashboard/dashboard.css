@@ -1,0 +1,34 @@
+.grid-container {
+    height: 100%;
+    width: 100%;
+    margin: 3% auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 6px;
+}
+.greeting {
+    background: #b03532;
+  }
+.todo-list {
+    background: #33a8a5;
+  }
+.date-clock {
+    background: #ff9069;
+  }
+.calendar {
+    background: #6a478f;
+  }
+.calculator {
+    background: #3d8bb1;
+  }
+  .grid-item {
+    border: 1px dotted #eee;
+    background-color: crimson;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  } 
