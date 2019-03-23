@@ -1,46 +1,92 @@
-.grid-container {
-    height: 100%;
-    width: 100%;
-    margin: 3% auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-      "greet greet todo todo date"
-      "cal cal cal calc calc"
-      "cal cal cal calc calc";
-    grid-gap: 6px;
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR_2nVYsNt775V854daKDGRSuTD4bzF9o0f5Q_Jms0XqAeLZBcCg");
+  background-repeat: no-repeat;
+  background-size: 100% 1200px;
+}
+.grid-container1 {
+  height: 1000px;
+  width: 100%;
+  margin: 2% auto;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.34%;
+  grid-template-rows: 25% 75%;
+  border: 4px solid pink;
+  box-sizing: border-box;
 }
 .greeting {
-    background: #b03532;
-    grid-area: greet;
-    height: 7rem;
-  }
+  background: #b03532;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border: solid 2px gray;
+  box-sizing: border-box;
+  margin: 1%;
+}
 .todo-list {
-    background: #33a8a5;
-    grid-area: todo;
-
-  }
+  background: #33a8a5;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border: solid 2px blue;
+  box-sizing: border-box;
+  margin: 1%;
+}
 .date-clock {
-    background: #ff9069;
-    grid-area: date;
-  }
+  background: #ff9069;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  border: black solid 2px;
+  box-sizing: border-box;
+  margin: 1%;
+}
+.day {
+  text-align: center;
+  font-size: 2rem;
+}
+.date {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.clock {
+  text-align: center;
+  font-size: 1.75rem;
+  font-style: italic;
+}
 .calendar {
-    background: #6a478f;
-    grid-area: cal;
-    height: 12rem;
-  }
+  background: #6a478f;
+  grid-column: 1/3;
+  grid-row: 2/4;
+  border: 2px solid green;
+  margin: 0.5%;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat 1fr 1fr 1fr;
+  grid-template-rows: repeat 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+p2 {
+  margin-top: 5px;
+  text-align: center;
+  color: Black;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 3em;
+}
+.day {
+  display: inline;
+  font-size: 1.5rem;
+}
+.date {
+  position: center;
+  border: 2px solid;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  margin: 2px;
+}
 .calculator {
-    background: #3d8bb1;
-    grid-area: calc;
-  }
-  .grid-item {
-    border: 1px dotted #eee;
-    background-color: crimson;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  } 
+  background: #3d8bb1;
+  grid-column: 3/4;
+  grid-row: 2/4;
+  border: 2px solid white;
+  margin: 1%;
+}
