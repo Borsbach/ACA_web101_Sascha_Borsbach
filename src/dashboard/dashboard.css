@@ -4,23 +4,35 @@
     margin: 3% auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "greet greet todo todo date"
+      "cal cal cal calc calc"
+      "cal cal cal calc calc";
     grid-gap: 6px;
 }
 .greeting {
     background: #b03532;
+    grid-area: greet;
+    height: 7rem;
   }
 .todo-list {
     background: #33a8a5;
+    grid-area: todo;
+
   }
 .date-clock {
     background: #ff9069;
+    grid-area: date;
   }
 .calendar {
     background: #6a478f;
+    grid-area: cal;
+    height: 12rem;
   }
 .calculator {
     background: #3d8bb1;
+    grid-area: calc;
   }
   .grid-item {
     border: 1px dotted #eee;
