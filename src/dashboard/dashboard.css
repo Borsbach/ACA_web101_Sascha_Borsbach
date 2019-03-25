@@ -1,7 +1,7 @@
 body {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR_2nVYsNt775V854daKDGRSuTD4bzF9o0f5Q_Jms0XqAeLZBcCg");
   background-repeat: no-repeat;
-  background-size: 100% 1200px;
+  background-size: 100% 1400px;
 }
 .grid-container1 {
   height: 1000px;
@@ -10,7 +10,7 @@ body {
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.34%;
   grid-template-rows: 25% 75%;
-  border: 4px solid pink;
+  /* border: 4px solid pink; */
   box-sizing: border-box;
 }
 .greeting {
@@ -121,4 +121,56 @@ body {
   width: auto;
   display: flex;
   justify-content: space-around;
+}
+.calc-container {
+  display: flex;
+  flex-direction: column;
+  width: 535px;
+  height: 1000px;
+  background: lightgrey;
+}
+.calc-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+}
+.display-input {
+  vertical-align: middle;
+  width: 95%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: silver;
+}
+.row-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightgray;
+  width: 100%;
+  border: 2px solid blue;
+  border-radius: 5px;
+  text-align: center;
+  margin: 2px;
+}
+.calc-buttons {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  background: lightgray;
+}
+.calc-button-row {
+  display: flex;
+  height: 100%;
+  margin: 2px;
+}
+.number {
+  vertical-align: middle;
+}
+.calc-font {
+  font-family: "Times New Roman";
+  font-size: 45px;
 }
