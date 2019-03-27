@@ -97,8 +97,8 @@ body {
   grid-column: 1/8;
 }
 .week2 {
-  grid-row:3/4;
-  grid-column:1/8;
+  grid-row: 3/4;
+  grid-column: 1/8;
 }
 .week3 {
   grid-row: 4/5;
