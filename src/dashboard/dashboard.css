@@ -1,18 +1,19 @@
 body {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR_2nVYsNt775V854daKDGRSuTD4bzF9o0f5Q_Jms0XqAeLZBcCg");
   background-repeat: no-repeat;
-  background-size: 100% 1400px;
+  background-size: 100% 150%;
 }
+
 .grid-container1 {
   height: 1000px;
   width: 100%;
   margin: 2% auto;
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.34%;
-  grid-template-rows: 25% 75%;
-  /* border: 4px solid pink; */
+  grid-template-columns: 33.33% 33.33% 33.34% auto;
+  grid-template-rows: 25% 75% auto;
   box-sizing: border-box;
 }
+
 .greeting {
   background: #b03532;
   grid-column: 1/2;
@@ -21,6 +22,7 @@ body {
   box-sizing: border-box;
   margin: 1%;
 }
+
 .todo-list {
   background: #33a8a5;
   grid-column: 2/3;
@@ -29,24 +31,33 @@ body {
   box-sizing: border-box;
   margin: 1%;
 }
+
 .date-clock {
   background: #ff9069;
   grid-column: 3/4;
   grid-row: 1/2;
+  border: 2px solid red;
+  box-sizing: border-box;
+  margin: 1%;
+  display: inline;
 }
-.day {
-  text-align: center;
-  font-size: 2rem;
+
+.todays-day {
+  display: inline;
+  flex-direction: row;
+  margin-right: 10px;
 }
+
 .todays-date {
   text-align: center;
-  font-size: 1.5rem;
+  display: inline;
 }
+
 .clock {
   text-align: center;
-  font-size: 1.75rem;
   font-style: italic;
 }
+
 .calendar {
   background: #6a478f;
   grid-column: 1/3;
@@ -54,37 +65,32 @@ body {
   border: 2px solid green;
   margin: 0.5%;
 }
+
 .calendar-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
-.h1 {
+
+h1 {
   text-align: center;
 }
-.p2 {
-  margin-top: 10px;
-  text-align: center;
-  color: Black;
-  text-transform: capitalize;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 400;
-  font-size: 3em;
-}
+
 .day {
-  display: inline;
-  font-size: 1.5rem;
+  font-size: 4rem;
 }
 .date {
   position: center;
   border: 2px solid;
-  display: inline-block;
-  width: 140px;
-  height: 140px;
-  margin: 3px;
+  display: inline-flex;
+  width: 10%;
+  padding-top: 5%;
+  position: relative;
+  margin: 4px;
   text-align: center;
   font-size: 1.5rem;
 }
+
 .calculator {
   background: #3d8bb1;
   grid-column: 3/4;
@@ -92,43 +98,27 @@ body {
   border: 2px solid white;
   margin: 1%;
 }
-.week1 {
-  grid-row: 2/3;
-  grid-column: 1/8;
-}
-.week2 {
-  grid-row: 3/4;
-  grid-column: 1/8;
-}
-.week3 {
-  grid-row: 4/5;
-  grid-column: 1/8;
-}
-.week4 {
-  grid-row: 5/6;
-  grid-column: 1/8;
-}
-.week5 {
-  grid-row: 6/7;
-  grid-column: 1/8;
-}
-.day {
-  display: inline;
-  flex-direction: row;
-  margin-right: 75px;
-}
-.week-days {
-  width: auto;
+
+.week {
   display: flex;
   justify-content: space-around;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
+
+.filler {
+  display: hidden;
+  border: 2px solid transparent;
+}
+
 .calc-container {
   display: flex;
   flex-direction: column;
-  width: 535px;
-  height: 1000px;
+  width: 100%;
+  height: 100%;
   background: lightgrey;
 }
+
 .calc-screen {
   display: flex;
   flex-direction: column;
@@ -136,6 +126,7 @@ body {
   height: 20%;
   width: 100%;
 }
+
 .display-input {
   vertical-align: middle;
   width: 95%;
@@ -144,6 +135,7 @@ body {
   border-radius: 15px;
   background: silver;
 }
+
 .row-buttons {
   display: flex;
   align-items: center;
@@ -155,6 +147,7 @@ body {
   text-align: center;
   margin: 2px;
 }
+
 .calc-buttons {
   width: 100%;
   height: 80%;
@@ -162,15 +155,43 @@ body {
   flex-direction: column;
   background: lightgray;
 }
+
 .calc-button-row {
   display: flex;
   height: 100%;
   margin: 2px;
 }
+
 .number {
   vertical-align: middle;
 }
+
 .calc-font {
   font-family: "Times New Roman";
   font-size: 45px;
+}
+@media only screen and (max-width: 768px) {
+  .date-clock {
+    display: none;
+  }
+  .calculator {
+    display: none;
+  }
+  .grid-container1 {
+    width: 150%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .grid-container1 {
+    display: inline;
+  }
+  .date-clock {
+    display: flex;
+  }
+  .calculator {
+    display: inline-block;
+    width: 98%;
+    height: 900px;
+  }
 }
