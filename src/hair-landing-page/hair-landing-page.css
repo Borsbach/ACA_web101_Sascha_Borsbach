@@ -1,0 +1,55 @@
+body {
+    display: grid;
+    height:100%;
+    width:100%;
+}
+
+.main-container {
+    border:2px solid red;
+    display: grid;
+    grid-template-rows: 10% 75% 15%;
+}
+
+.container1 {
+    border: 2px solid blue;
+    text-align: right;
+    padding:1%;
+}
+
+.container2 {
+    border: 2px solid green;
+    background-image: url(https://www.costcutterssalons.com/wp-content/themes/costcutters/images/cc-homepage-bg.jpg);
+}
+
+.container3 {
+    border: 2px solid orange;
+    background-color: #1B365D;
+    text-align: flex;
+}
+
+#logo {
+    height: 70px;
+    margin:1.5%
+}
+
+.menu-button {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 0;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+p {
+    color:white;
+    font-size: 1.3rem;
+    display: inline;
+    text-align: center !important;
+}
+
+p1 {
+    color: white;
+    text-align: center;
+    font-size: .6rem;
+}
