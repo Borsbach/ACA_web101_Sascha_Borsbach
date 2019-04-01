@@ -1,55 +1,115 @@
 body {
-    display: grid;
-    height:100%;
-    width:100%;
+  display: grid;
+  height: 100%;
+  width: 100%;
 }
 
 .main-container {
-    border:2px solid red;
-    display: grid;
-    grid-template-rows: 10% 75% 15%;
+  border: 2px solid red;
+  display: grid;
+  grid-template-rows: 8% 75% 17%;
+}
+
+header{
+    width: auto;
+    margin: none;
+    align-items: inline;
 }
 
 .container1 {
-    border: 2px solid blue;
-    text-align: right;
-    padding:1%;
+  border: 2px solid blue;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between
 }
-
-.container2 {
-    border: 2px solid green;
-    background-image: url(https://www.costcutterssalons.com/wp-content/themes/costcutters/images/cc-homepage-bg.jpg);
-}
-
-.container3 {
-    border: 2px solid orange;
-    background-color: #1B365D;
-    text-align: flex;
-}
-
-#logo {
-    height: 70px;
-    margin:1.5%
+.logo-img {
+  background-image: url(https://www.costcutterssalons.com/wp-content/themes/costcutters/images/cc-color.svg);
+  background-repeat: no-repeat;
+  width: 173px;
+  height: 40px;
+  border: green;
 }
 
 .menu-button {
-    padding: .25rem .75rem;
+    padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
-    line-height: 0;
+    line-height: 1.5;
     background-color: transparent;
     border: 1px solid transparent;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.container2 {
+  border: 2px solid green;
+  background-image: url(https://www.costcutterssalons.com/wp-content/themes/costcutters/images/cc-homepage-bg.jpg);
+}
+
+.coupon-button {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+  color: #fff;
+  background-color: #e21836;
+  border-color: #e21836;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  
+}
+
+.careers-button {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+  color: #fff;
+  background-color: #1b365d;
+  border-color: #1b365d;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+
+.container3 {
+  border: 2px solid orange;
+  background-color: #1b365d;
+  padding: 10px;
+}
+
+.logo-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+#logo {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
 }
 
 p {
-    color:white;
-    font-size: 1.3rem;
-    display: inline;
-    text-align: center !important;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.copyright-box {
+  display:flex;
+  justify-content: space-evenly;
 }
 
-p1 {
-    color: white;
-    text-align: center;
-    font-size: .6rem;
+.copyright {
+  color: white;
+  font-size: 0.6rem;
 }
