@@ -3,22 +3,16 @@ body {
   height: 100%;
   width: 100%;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
 }
 
-
 .main-container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: grid;
   grid-template-rows: 8% 75% 17%;
 }
 
 .container1 {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   padding: 12px;
   display: flex;
   justify-content: space-between;
@@ -26,27 +20,29 @@ body {
 .logo-img {
   background-image: url(https://www.costcutterssalons.com/wp-content/themes/costcutters/images/cc-color.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 173px;
   height: 40px;
-  border: green;
+  /* border: green; */
 }
 
 .menu-button {
-    padding: 0.25rem 0.9rem;
-    font-size: 1.5rem;
-    line-height: 0.9;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 0.5rem;
-    border-color: rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 0.9rem;
+  font-size: 1.5rem;
+  line-height: 0.9;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .container2 {
-  border: 2px solid green;
-  width:100%;
-  height:100%;
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 100%;
   background-image: url(https://www.costcutterssalons.com/wp-content/themes/costcutters/images/cc-homepage-bg.jpg);
   display: flex;
+  background-size: cover;
   align-items: center;
   justify-content: center;
 }
@@ -58,6 +54,7 @@ body {
   width:100;
   margin-top: 2%;
 }
+
 .coupon-button {
   padding: .5rem 1rem;
   font-size: 1.25rem;
@@ -88,36 +85,12 @@ body {
   width:48%;
 }
 
-.searchbar {
-    flex: 0 0 100%;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    min-height: 200px;
-    padding-right: 10px;
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.search {
-  flex: 0 0 100%;
-  max-width: 100%;
-  position: relative;
-  width: 100%;
-  min-height: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border-radius: .3rem;
-  display: flex;
-  flex-direction: column;
-}
-
 .form-control{
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
+  border-radius: .5rem;
   display: flex;
   align-items: center;
   width:90%;
@@ -128,21 +101,17 @@ body {
   padding: .5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: .3rem;
+  border-radius: .5rem;
   display:flex;
   align-items: center;
 }
 
-.row-justify-content-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: -10px;
-  margin-left: -10px;
+.rounded {
+  border-radius: .5rem;
 }
 
 .container3 {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   background-color: #1b365d;
   padding: 10px;
 }
