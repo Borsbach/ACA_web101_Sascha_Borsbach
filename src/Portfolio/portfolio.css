@@ -1,5 +1,5 @@
 nav {
-  height: 100px;
+  height: 175px;
   padding: 0px 15px;
   background: linear-gradient(
     200deg,
@@ -18,22 +18,13 @@ nav {
   justify-content:space-between;
 }
 
-nav .logo {
-  flex: 2;
-  height: 70px;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+#profile-pic {
+  width: 100px;
+  height: 100px;
+  margin: 15%;
 }
 
-.logo i {
-  margin-right: 10px;
-  font-size: 45px;
-}
-
-nav ul {
+.nav-links {
   height: 100%;
   flex: 1;
   display: flex;
