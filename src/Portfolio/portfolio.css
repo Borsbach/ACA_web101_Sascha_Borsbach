@@ -1,17 +1,7 @@
 nav {
   height: 175px;
   padding: 0px 15px;
-  background: linear-gradient(
-    200deg,
-    #ffeb00,
-    #ffb820,
-    #ff8748,
-    #ff5e69,
-    #dd4582,
-    #a43f8e,
-    #623e8a,
-    #0c3776
-  );
+  background: linear-gradient(180deg, #0da4e4, #1b93b9, #004dff);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,7 +18,6 @@ nav {
   height: 100%;
   flex: 1;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   font-weight: bold;
@@ -40,7 +29,16 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #bb8a8d
+  background: #3E94DC;
+}
+ 
+.about-me {
+  height:150px;
+  background: hsl(184, 100%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .my-projects {
@@ -48,18 +46,18 @@ nav {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background: blue;
-
+  background: #144670;
 }
 
 .projects {
   height: 500px;
-  display: flex;
-  /* grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
-  grid-auto-rows: 1fr, 1fr, 1fr; */
-  justify-content: space-around;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  justify-items: center;
   align-items: center;
-  background: blue;
+  background: #144670;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -68,9 +66,9 @@ nav {
 .project-box {
   height: 150px;
   width: 150px;
-  border: 2px solid black;
+  border: 2px dotted #0da4e4;
   border-radius: 10px;
-  background: greenyellow;
+  background: #a0d6f2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +80,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: teal;
+  background: #b78c5b;
 }
 
 .contact {
@@ -91,7 +89,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: red;
+  background: #484846;
 }
 
 footer {
@@ -99,5 +97,5 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: yellow;
+  background: #868686;
 }
