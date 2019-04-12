@@ -1,0 +1,76 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main-container:hover .box:nth-child(odd) {
+  width: 100px;
+  transition: all 2s;
+}
+
+.main-container:hover .box:nth-child(even) {
+  width: 25px;
+  transition: all 2s;
+}
+
+.main-container .box:nth-child(odd) {
+  transform: rotate(180);
+  transition: 2s ease 1s;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(10, 70, 122);
+  margin: 0 0 10px 0;
+}
+
+.box-1 {
+background: white;
+border: 1px solid black;
+transform: rotate(360);
+transition: transform 3s ease 2s;
+}
+
+.box-2 {
+  background: red;
+}
+
+.box-3 {
+  background: green;
+}
+
+.box-4 {
+  background: yellow;
+}
+
+.box-5{
+  background: purple;
+}
+
+.box-6 {
+  background: aqua;
+}
+
+.box-8 {
+  background: orange;
+}
+
+.box-9 {
+  background: plum;
+}
+
+.box-10 {
+  background: lightseagreen;
+}
+
+.box-11 {
+  background: steelblue;
+}
+
+.box-12 {
+  background: lightslategray;
+}
