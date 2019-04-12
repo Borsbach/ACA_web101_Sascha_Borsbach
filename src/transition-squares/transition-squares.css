@@ -3,22 +3,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  padding-top: 10px;
+  background: wheat;
 }
 
-.main-container:hover .box:nth-child(odd) {
+.main-container:hover div:nth-child(odd) {
   width: 100px;
-  transition: all 2s;
+  transition: all 2s ease;
+  transform: rotate(720deg);
+  margin-left: 1570px;
 }
 
-.main-container:hover .box:nth-child(even) {
+.main-container:hover div:nth-child(even) {
   width: 25px;
-  transition: all 2s;
-}
-
-.main-container .box:nth-child(odd) {
-  transform: rotate(180);
-  transition: 2s ease 1s;
+  transition: all 2s ease;
+  transform: rotate(-720deg);
+  margin-right: 1650px;
 }
 
 .box {
@@ -31,8 +31,8 @@
 .box-1 {
 background: white;
 border: 1px solid black;
-transform: rotate(360);
-transition: transform 3s ease 2s;
+/* transform: rotate(90deg) 3s; */
+/* transition: transform 3s ease; */
 }
 
 .box-2 {
@@ -73,4 +73,18 @@ transition: transform 3s ease 2s;
 
 .box-12 {
   background: lightslategray;
+}
+
+@keyframes in {
+  from { transform: rotate(0deg);
+  }
+  to { transform: rotate(720);
+  }
+}
+
+@keyframes out {
+  from { transform: rotate(720);
+  }
+  to { transform: rotate(0)
+  }
 }
