@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   padding-top: 10px;
-  background: wheat;
 }
 
 .main-container:hover div:nth-child(odd) {
@@ -12,7 +11,7 @@
   height: 100px;
   transition: 4s;
   transform: rotate(720deg);
-  margin-left: 1580px;
+  margin-left: 1582px;
   transition-delay: 0.5s;
 }
 
@@ -25,16 +24,23 @@
   transition-delay: 0.5s;
 }
 
+.odd {
+  transition: 4s ease-in-out;
+}
+
+.even {
+  transition: 2s ease-in-out;
+}
+
 .box {
   height: 50px;
   width: 50px;
   background-color: rgb(10, 70, 122);
-  margin: 0 0 10px 0;
+  margin: 2px 2px 3px 0;
 }
 
 .box-1 {
-  background: white;
-  border: 1px solid black;
+  background:brown;
 }
 
 .box-2 {
