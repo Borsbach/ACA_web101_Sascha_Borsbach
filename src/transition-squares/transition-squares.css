@@ -9,6 +9,7 @@
 
 .main-container:hover div:nth-child(odd) {
   width: 100px;
+  height: 100px;
   transition: 4s;
   transform: rotate(720deg);
   margin-left: 1580px;
@@ -17,6 +18,7 @@
 
 .main-container:hover div:nth-child(even) {
   width: 25px;
+  height: 25px;
   transition: 2s;
   transform: rotate(-720deg);
   margin-right: 1658px;
