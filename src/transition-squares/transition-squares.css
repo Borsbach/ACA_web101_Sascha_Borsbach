@@ -1,0 +1,78 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  background: wheat;
+}
+
+.main-container:hover div:nth-child(odd) {
+  width: 100px;
+  height: 100px;
+  transition: 4s;
+  transform: rotate(720deg);
+  margin-left: 1580px;
+  transition-delay: 0.5s;
+}
+
+.main-container:hover div:nth-child(even) {
+  width: 25px;
+  height: 25px;
+  transition: 2s;
+  transform: rotate(-720deg);
+  margin-right: 1658px;
+  transition-delay: 0.5s;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(10, 70, 122);
+  margin: 0 0 10px 0;
+}
+
+.box-1 {
+  background: white;
+  border: 1px solid black;
+}
+
+.box-2 {
+  background: red;
+}
+
+.box-3 {
+  background: green;
+}
+
+.box-4 {
+  background: yellow;
+}
+
+.box-5 {
+  background: purple;
+}
+
+.box-6 {
+  background: aqua;
+}
+
+.box-8 {
+  background: orange;
+}
+
+.box-9 {
+  background: plum;
+}
+
+.box-10 {
+  background: lightseagreen;
+}
+
+.box-11 {
+  background: steelblue;
+}
+
+.box-12 {
+  background: lightslategray;
+}
