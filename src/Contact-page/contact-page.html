@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Contact Page</title>
     <link rel="stylesheet" href="./contact-page.css" />
     <link rel="stylesheet" href="../../css-reset.css" />
   </head>
   <body>
     <div class="contact-banner">
-      <h1>CONTACT ME</h1>
-      <h2>I'd ❤️to help!</h2>
+      <h2>CONTACT ME</h2>
+      <span>I'd ❤️to help!</span>
     </div>
     <form action="" method="POST" class="STYLE-NAME">
       <h1>
@@ -28,9 +28,22 @@
           id="email"
           type="email"
           name="email"
-          placeholder="Valid Email Address"
-        />
+          placeholder="Valid Email Address">
       </label>
+      <label>
+          <span>Message :</span>
+          <textarea id="message" name="message" placeholder="Your Message to Me"></textarea>
+      </label> 
+       <label>
+          <span>Subject :</span><select name="selection">
+          <option value="More Informtio">More Information</option>
+          <option value="General Question">General Question</option>
+          </select>
+      </label>    
+       <label>
+          <span>&nbsp;</span> 
+          <input type="button" class="button" value="Send" /> 
+      </label> 
     </form>
   </body>
 </html>
