@@ -1,34 +1,44 @@
 body {
-  background: darkgrey;
+  background-image: url(../../Images/bluewood.png);
+  background-size: cover;
 }
 
 .contact-banner {
-  display:flex;
+  display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 60px;
+  color: aqua;
+}
+
+h2 > span {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 form {
-  margin-left:auto;
-  margin-right:auto;
-  max-width: 600px;
-  background: whitesmoke;
-  padding: 25px 15px 25px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  background: lightblue;
+  padding: 30px 20px 30px 15px;
   font: 18px Georgia, "Times New Roman", Times, serif;
-  color: black;
-  text-shadow: 1px 1px 1px darkgray;
-  border:1px solid black;
+  border: 2px solid lightseagreen;
 }
 
 h1 {
   font-size: 25px;
   padding: 0px 0px 10px 40px;
   display: block;
-  border-bottom:1px solid #E4E4E4;
-  margin: -10px -15px 30px -10px;;
-  color: #888;
+  border-bottom: 2px solid lightseagreen;
+  margin: -10px -15px 30px -10px;
 }
-h1>span {
+h1 > span {
   display: block;
   font-size: 11px;
 }
@@ -36,51 +46,44 @@ label {
   display: block;
   margin: 0px;
 }
-label>span {
+label > span {
   float: left;
   width: 20%;
   text-align: right;
   padding-right: 10px;
   margin-top: 10px;
-  color: black;
+  font-weight: bold;
 }
-input[type="text"], input[type="email"], textarea, select {
-  border: 1px solid #DADADA;
-  border-radius: 5px;
-  color: #888;
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  border: 1px solid black;
+  border-radius: 7px;
   height: 30px;
   margin-bottom: 16px;
   margin-right: 6px;
   margin-top: 2px;
-  outline: 0 none;
   padding: 3px 3px 3px 5px;
   width: 70%;
-  font-size: 12px;
-  line-height:15px;
-  box-shadow: inset 0px 1px 4px #ECECEC;
+  font-size: 10px;
+  line-height: 20px;
 }
-textarea{
+textarea {
   padding: 5px 3px 3px 5px;
-  height:150px;
-}
-select {
-  appearance:none;
-  text-indent: 0.01px;
-  text-overflow: '';
-  width: 70%;
-  height: 35px;
-  line-height: 25px;
+  height: 150px;
 }
 
 .button {
-  background:red;
+  background: blue;
   border: none;
   padding: 10px 25px 10px 25px;
   color: white;
-  box-shadow: 1px 1px 5px lightgray;
+  box-shadow: 2px 2px 5px black;
   border-radius: 5px;
-  cursor: alias;
+  cursor: progress;
 }
 .button:hover {
-    background: salmon;
+  background: teal;
+  color: black;
 }
