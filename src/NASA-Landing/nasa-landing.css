@@ -24,14 +24,7 @@ section {
   justify-content: space-between;
   background-color: lightgray;
 }
-article {
-  width: 270px;
-  height: 342px;
-  background-color: lightgray;
-  color: gray;
-  text-align: left;
-  padding: 3%;
-}
+
 h3 {
   color: black;
 }
