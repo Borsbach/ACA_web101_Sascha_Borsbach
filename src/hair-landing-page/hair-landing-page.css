@@ -149,6 +149,9 @@ p {
   color: white;
   font-size: 0.6rem;
 }
+.text-center {
+  padding: 10px 10px 10px;
+}
 
 .search-text {
   color: #1b365d;
