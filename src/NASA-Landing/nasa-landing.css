@@ -3,6 +3,7 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
 main {
   margin: 0;
   height: 450px;
@@ -16,10 +17,12 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 section {
   display: flex;
   height: 342px;
   margin-top: 4%;
+  padding: 0 20px 0 20px;
   flex-direction: row;
   justify-content: space-between;
   background-color: lightgray;
@@ -28,31 +31,37 @@ section {
 h3 {
   color: black;
 }
+
 p {
   text-align: left;
-  padding-left: 1%;
+  padding-left: 5%;
   margin-bottom: 2%;
 }
+
 textarea#name {
   width: 230px;
   height: 23px;
   border: 2px solid white;
 }
+
 textarea#message {
   width: 230px;
   height: 70px;
   border: 2px solid white;
 }
+
 button {
   background: rgb(58, 53, 53);
   color: white;
   width: 80px;
   height: 30px;
-  margin-top: 2%;
+  margin-top: 3%;
 }
+
 @media (max-width: 640px) {
   section {
     flex-direction: column;
     height: 100%;
+    padding-left: 30px;
   }
 }
