@@ -178,4 +178,11 @@ p {
     display: flex;
     margin-top: 20px;
   }
+  .logo-container{
+    width:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
